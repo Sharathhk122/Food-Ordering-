@@ -92,10 +92,10 @@ Here, **food items are dynamically created** using `document.createElement` and 
 ## 👨‍💻 Author  
 **Sharath H K** – [GitHub Profile](https://github.com/Sharathhk122)
 ### Home Page  
-![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(977).png))
-![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(978).png))
-![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(979).png))
-![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(980).png))
-![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(981).png))    
+![Home Page]((https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(977).png))
+![Home Page]((https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(978).png))
+![Home Page]((https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(979).png))
+![Home Page]((https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(980).png))
+![Home Page]((https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(981).png))    
 
 ---
