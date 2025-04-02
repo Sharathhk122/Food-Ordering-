@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🏆 Hero Search Section (Like Zomato) */
+.search-container {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Large hero section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 30PX;
+}
+
+/* 🔥 Dark Overlay to Improve Text Visibility */
+.search-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+}
+
+/* 🏆 Search Title (Zomato Style) */
+.search-title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* 🏆 Search Box */
+.search-box {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    max-width: 600px;
+}
+
+/* 🔥 3D Animated Search Input */
+.search-input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* 🚀 3D Effect on Focus */
+.search-input:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.9);
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Sort Dropdown */
+#sortby {
+    
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Restaurant Cards Container */
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* 🍽 Hotel Card with 3D Color Effect */
+.hotel-card {
+    width: 260px;
+    height: 310px;
+    background: linear-gradient(to bottom right, #ffffff, #f3f3f3);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px solid transparent;
+    animation: borderGlow 2s infinite alternate;
+}
+.hotel-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+    border-color: #ffae00; /* Change border color on hover */
+}
+
+/* 🍽 Constant 3D Color Animation */
+@keyframes borderGlow {
+    0% {
+        border-color: #ff5733;
+        box-shadow: 0 0 20px #ff5733;
+    }
+    100% {
+        border-color: #ffcc33;
+        box-shadow: 0 0 20px #ffcc33;
+    }
+}
+
+/* 🖼 Hotel Image */
+.hotel-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 📜 Hotel Description */
+.hotel-description {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #ff6b6b, #ffa07a);
+    color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 🏠 Hotel Name */
+.hotel-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* 🏷 Tags */
+.hotel-tags {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+/* ⏳ ETA */
+.hotel-eta {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+    color: #ffeb3b;
+}
+
+/* ⭐ Star Rating */
+.fa-star {
+    color: #ffeb3b;
+}
+
+/* ❤️ Button Styling */
+.show-fav {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #ff4b1f, #ff9068);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.show-fav:hover {
+    background: linear-gradient(to right, #ff9068, #ff4b1f);
+    transform: scale(1.1);
+}
+/* Footer Styles */
+.footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+/* Dropdown Styling */
+.footer-options select {
+    background: transparent;
+    color: rgba(14, 219, 17, 0.914);
+    border: 1px solid white;
+    padding: 8px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer Links Section */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    color: #ffae00;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-column ul li:hover {
+    color: #ffae00;
+}
+
+/* Social Media Icons */
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 14px;
+    color: gray;
+    padding-top: 20px;
+    border-top: 1px solid gray;
+}
+/* 🛑 Modal Background (Full Page) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📦 Modal Content */
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ❌ Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* 📝 Form Fields */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* 🔥 Submit Button */
+.submit-btn {
+    padding: 10px;
+    background: linear-gradient(to right, #ff4b1f, #ff9068);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #ff9068, #ff4b1f);
+}/* 🟠 Auth Buttons (Login & Signup - Positioned Top Right) */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+/* 🛑 Login & Signup Button Styles */
+.login-btn, .signup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: #ff5733;
+}
+
+.signup-btn {
+    background: #ffcc33;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    opacity: 0.8;
+}

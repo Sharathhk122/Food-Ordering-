@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="search-container" style="background-image: url('./images/22.jpg');">
+            <div class="overlay"></div> <!-- Overlay for better visibility -->
+            <h1 class="search-title">Discover the Best Food & Restaurants</h1>
+            <div class="auth-buttons">
+                <button class="login-btn" onclick="openModal('loginModal')">Login</button>
+                <button class="signup-btn" onclick="openModal('signupModal')">Signup</button>
+            </div>
+        
+            <div class="search-box">
+                <input type="text" id="search" class="search-input" placeholder="Search for restaurants, cuisines, or dishes..." autocomplete="off">
+            </div>
+
+
+        </header>
+
+
+
+        <section class="filters">
+            <label for="sortby"> </label>
+            <select id="sortby" onchange="sortby(event)">
+                <option disabled selected>Sort By</option>
+                <option value="rating">Sort By RATING</option>
+                <option value="eta">Sort By ESTIMATED TIME ARVIAL</option>
+            </select>
+            <button class="show-fav" onclick="fav()">Your Favourites</button>
+        </section>
+
+        <main class="restaurants"></main>
+        <div class="errorNotify"></div>
+    </div>
+
+    <!-- Login & Signup Buttons -->
+
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="login-email">Phone No. or Email</label>
+            <input type="text" id="login-email" placeholder="Enter Phone No. or Email">
+            
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter Password">
+            
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signupModal')">&times;</span>
+        <h2>Signup</h2>
+        <form>
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" placeholder="Enter Full Name">
+            
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" placeholder="Enter Email">
+            
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter Password">
+            
+            <button type="submit" class="submit-btn">Signup</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="./images/app-logo.png" alt="Zomato Logo">
+            </div>
+            <div class="footer-options">
+                <select>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                </select>
+                <select>
+                    <option>English</option>
+                    <option>हिन्दी</option>
+                    <option>Español</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>About Zomato</h3>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Blog</li>
+                    <li>Work With Us</li>
+                    <li>Investor Relations</li>
+                    <li>Report Fraud</li>
+                    <li>Press Kit</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Zomaverse</h3>
+                <ul>
+                    <li>Zomato</li>
+                    <li>Blinkit</li>
+                    <li>District</li>
+                    <li>Feeding India</li>
+                    <li>Hyperpure</li>
+                    <li>Zomato Live</li>
+                    <li>Zomaland</li>
+                    <li>Weather Union</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For Restaurants</h3>
+                <ul>
+                    <li>Partner With Us</li>
+                    <li>Apps For You</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Learn More</h3>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><img src="./images/23.jpeg" alt="Facebook"></a>
+            <a href="#"><img src="./images/26.jpeg" alt="Twitter"></a>
+            <a href="#"><img src="./images/25.jpeg" alt="Instagram"></a>
+            <a href="#"><img src="./images/24.jpeg" alt="LinkedIn"></a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Designed and developed by Sharath H K in 2025. Passionate about web development, bringing seamless experiences to food lovers everywhere.
+
+                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy, and Content Policies. 2025 © Zomato™ Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
