@@ -33,7 +33,11 @@ A **food ordering web application** that allows users to browse restaurants, vie
 ## 📸 Screenshots  
 
 ### Home Page  
-![Home Page](screenshots/homepage.png)  
+![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(977).png))
+![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(978).png))
+![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(979).png))
+![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(980).png))
+![Home Page]([screenshots/homepage.png](https://github.com/Sharathhk122/Food-Ordering-/blob/main/Screenshot%20(981).png))    
 
 ### Food Menu  
 ![Food Menu](screenshots/menu.png)  
